@@ -12,8 +12,8 @@ CREATE TABLE `operations` (
 #-----------------------------------
 #USER RIGHTS MANAGEMENT
 #-----------------------------------
-CREATE USER 'pnom'@'localhost' IDENTIFIED BY 'toor';
+CREATE USER 'pnom'@'%' IDENTIFIED BY 'toor';
 
-GRANT ALL PRIVILEGES ON `pnom`.* TO 'pnom'@'localhost' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON `pnom`.* TO 'pnom'@'%' WITH GRANT OPTION;
 
 FLUSH PRIVILEGES;
